@@ -1,361 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Anatomy Trivia!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Random Trivia!</title>
+        <style type="text/css">
+                button,
+                div,
+                form,
+                input {
+                        margin: 10px;
+                }
+        </style>
 </head>
+
 <body>
         <div class="Header">
-                <h1>Click to Start </h1>
+                <h1>Trivia!! </h1>
                 <!-- Insert Start Button Here -->
+                <button id=button>Game Start</button>
                 <!-- Tie an if statement to the click, if clicked, start timer -->
                 <!-- Tie a hide show to this click button as well-->
-                 <!-- when timer is over, jquery hide questions div, also jquery html write "# of correct answers var" + "/ + "# of total answers" -->
+                <!-- when timer is over, jquery hide questions div, also jquery html write "# of correct answers var" + "/ + "# of total answers" -->
 
-                <h2>You have 2:00 minutes</h2>
-            </div>
+                <div id=show-number>
+                        <h2>Try to Answer 22 Questions in 100 Seconds!</h2>
+                </div>
+                <div id=results></div>
+        </div>
 
-            <!-- in this div, have all the questions already written to the page.   -->
-            <div id="the goods"></div>
-              
-                <div id="questions"></div>
+        <!-- in this div, have all the questions already written to the page.   -->
+        <div id="the goods"></div>
+
+        <div id="questions">
                 <p>How many spaces are on a standard Monopoly board?"
                         <br>
-                        <input type="radio" name="q1" class="a">
-                        "40"
+                        <input type="radio" name="q1" class="a"> "40"
                         <br>
-                        <input type="radio" name="q1" class="b">
-                        "60"
+                        <input type="radio" name="q1" class="b"> "60"
                         <br>
-                        <input type="radio" name="q1" class="b">
-                        "20"
+                        <input type="radio" name="q1" class="b"> "20"
                         <br>
-                        <input type="radio" name="q1" class="b">
-                        "80"      
+                        <input type="radio" name="q1" class="b"> "80"
                 </p>
                 <br>
                 <p>2. Writer Miguel de Cervantes was from which country?
                         <br>
-                        <input type="radio" name="q2" class="b">
-                        "France"
+                        <input type="radio" name="q2" class="b"> "France"
                         <br>
-                        <input type="radio" name="q2" class="b">
-                        "Portugal"
+                        <input type="radio" name="q2" class="b"> "Portugal"
                         <br>
-                        <input type="radio" name="q2" class="a">
-                        "Spain"
+                        <input type="radio" name="q2" class="a"> "Spain"
                         <br>
-                        <input type="radio" name="q2" class="b">
-                        "Italy"      
+                        <input type="radio" name="q2" class="b"> "Italy"
                 </p>
                 <br>
                 <p>3. What city does Batman live in?
                         <br>
-                        <input type="radio" name="q3" class="a">
-                        "Gotham City"
+                        <input type="radio" name="q3" class="a"> "Gotham City"
                         <br>
-                        <input type="radio" name="q3" class="b">
-                        "Smallville"
+                        <input type="radio" name="q3" class="b"> "Smallville"
                         <br>
-                        <input type="radio" name="q3" class="b">
-                        "Chicago"
+                        <input type="radio" name="q3" class="b"> "Chicago"
                         <br>
-                        <input type="radio" name="q3" class="b">
-                        "Arkham"      
+                        <input type="radio" name="q3" class="b"> "Arkham"
                 </p>
                 <br>
                 <p>4. What restaurant franchise advises you to 'Eat Fresh'?
                         <br>
-                        <input type="radio" name="q4" class="a">
-                        "Taco Bell"
+                        <input type="radio" name="q4" class="a"> "Taco Bell"
                         <br>
-                        <input type="radio" name="q4" class="b">
-                        "Subway"
+                        <input type="radio" name="q4" class="b"> "Subway"
                         <br>
-                        <input type="radio" name="q4" class="b">
-                        "McDonald's"
+                        <input type="radio" name="q4" class="b"> "McDonald's"
                         <br>
-                        <input type="radio" name="q4" class="b">
-                        "KFC"      
+                        <input type="radio" name="q4" class="b"> "KFC"
                 </p>
                 <br>
                 <p>5. Which movie was the first to win 11 Academy Awards?
                         <br>
-                        <input type="radio" name="q5" class="b">
-                        "Titanic"
+                        <input type="radio" name="q5" class="b"> "Titanic"
                         <br>
-                        <input type="radio" name="q5" class="b">
-                        "La La Land"
+                        <input type="radio" name="q5" class="b"> "La La Land"
                         <br>
-                        <input type="radio" name="q5" class="b">
-                        "Sound of Music"
+                        <input type="radio" name="q5" class="b"> "Sound of Music"
                         <br>
-                        <input type="radio" name="q5" class="a">
-                        "Ben-Hur"      
+                        <input type="radio" name="q5" class="a"> "Ben-Hur"
                 </p>
                 <br>
                 <p>6. Adele performed the theme song to which James Bond film?
                         <br>
-                        <input type="radio" name="q6" class="a">
-                        "Skyfall"
+                        <input type="radio" name="q6" class="a"> "Skyfall"
                         <br>
-                        <input type="radio" name="q6" class="b">
-                        "Casino Royale"
+                        <input type="radio" name="q6" class="b"> "Casino Royale"
                         <br>
-                        <input type="radio" name="q6" class="b">
-                        "Quantum of Solace"
+                        <input type="radio" name="q6" class="b"> "Quantum of Solace"
                         <br>
-                        <input type="radio" name="q6" class="b">
-                        "Spectre"      
+                        <input type="radio" name="q6" class="b"> "Spectre"
                 </p>
                 <br>
                 <p>7. What did Alfred Nobel develop?
                         <br>
-                        <input type="radio" name="q7" class="a">
-                        "Dynamite"
+                        <input type="radio" name="q7" class="a"> "Dynamite"
                         <br>
-                        <input type="radio" name="q7" class="b">
-                        "Atomic Bomb"
+                        <input type="radio" name="q7" class="b"> "Atomic Bomb"
                         <br>
-                        <input type="radio" name="q7" class="b">
-                        "Gunpowder"
+                        <input type="radio" name="q7" class="b"> "Gunpowder"
                         <br>
-                        <input type="radio" name="q7" class="b">
-                        "Nobelium"      
+                        <input type="radio" name="q7" class="b"> "Nobelium"
                 </p>
                 <br>
                 <p>8. What is the largest planet in our Solar System?
                         <br>
-                        <input type="radio" name="q8" class="b">
-                        "Saturn"
+                        <input type="radio" name="q8" class="b"> "Saturn"
                         <br>
-                        <input type="radio" name="q8" class="b">
-                        "Uranus"
+                        <input type="radio" name="q8" class="b"> "Uranus"
                         <br>
-                        <input type="radio" name="q8" class="b">
-                        "Neptune"
+                        <input type="radio" name="q8" class="b"> "Neptune"
                         <br>
-                        <input type="radio" name="q8" class="a">
-                        "Jupiter"      
+                        <input type="radio" name="q8" class="a"> "Jupiter"
                 </p>
                 <br>
                 <p>9. Which of these antagonist characters was created by novelist J.K. Rowling?
                         <br>
-                        <input type="radio" name="q9" class="b">
-                        "Professor Moriarty"
+                        <input type="radio" name="q9" class="b"> "Professor Moriarty"
                         <br>
-                        <input type="radio" name="q9" class="b">
-                        "Lord Farqaad"
+                        <input type="radio" name="q9" class="b"> "Lord Farqaad"
                         <br>
-                        <input type="radio" name="q9" class="b">
-                        "Darth Vader"
+                        <input type="radio" name="q9" class="b"> "Darth Vader"
                         <br>
-                        <input type="radio" name="q9" class="a">
-                        "Lord Voldemort"      
+                        <input type="radio" name="q9" class="a"> "Lord Voldemort"
                 </p>
                 <br>
                 <p>10. What is the name for the Jewish New Year?
                         <br>
-                        <input type="radio" name="q10" class="b">
-                        "Kwanzaa"
+                        <input type="radio" name="q10" class="b"> "Kwanzaa"
                         <br>
-                        <input type="radio" name="q10" class="b">
-                        "Hannukah"
+                        <input type="radio" name="q10" class="b"> "Hannukah"
                         <br>
-                        <input type="radio" name="q10" class="a">
-                        "Rosh Hashanah"
+                        <input type="radio" name="q10" class="a"> "Rosh Hashanah"
                         <br>
-                        <input type="radio" name="q10" class="b">
-                        "Yom Kippur"      
+                        <input type="radio" name="q10" class="b"> "Yom Kippur"
                 </p>
                 <br>
                 <p>11. Which truck is produced by the Ford Motor Company?
                         <br>
-                        <input type="radio" name="q11" class="b">
-                        "Silverado 1500"
+                        <input type="radio" name="q11" class="b"> "Silverado 1500"
                         <br>
-                        <input type="radio" name="q11" class="b">
-                        "CR-V"
+                        <input type="radio" name="q11" class="b"> "CR-V"
                         <br>
-                        <input type="radio" name="q11" class="b">
-                        "RAV4"
+                        <input type="radio" name="q11" class="b"> "RAV4"
                         <br>
-                        <input type="radio" name="q11" class="a">
-                        "F-150"      
+                        <input type="radio" name="q11" class="a"> "F-150"
                 </p>
                 <br>
                 <p>12.In which language was the book 'War and Peace' originally written?
                         <br>
-                        <input type="radio" name="q12" class="b">
-                        "German"
+                        <input type="radio" name="q12" class="b"> "German"
                         <br>
-                        <input type="radio" name="q12" class="b">
-                        "English"
+                        <input type="radio" name="q12" class="b"> "English"
                         <br>
-                        <input type="radio" name="q12" class="a">
-                        "Russian"
+                        <input type="radio" name="q12" class="a"> "Russian"
                         <br>
-                        <input type="radio" name="q12" class="b">
-                        "French"      
+                        <input type="radio" name="q12" class="b"> "French"
                 </p>
                 <br>
                 <p>13. Which of these countries was not a Soviet Republic in USSR?
                         <br>
-                        <input type="radio" name="q13" class="b">
-                        "Moldova"
+                        <input type="radio" name="q13" class="b"> "Moldova"
                         <br>
-                        <input type="radio" name="q13" class="b">
-                        "Azerbaijan"
+                        <input type="radio" name="q13" class="b"> "Azerbaijan"
                         <br>
-                        <input type="radio" name="q13" class="a">
-                        "Serbia"
+                        <input type="radio" name="q13" class="a"> "Serbia"
                         <br>
-                        <input type="radio" name="q13" class="b">
-                        "Kyrgyzstan"      
+                        <input type="radio" name="q13" class="b"> "Kyrgyzstan"
                 </p>
                 <br>
                 <p>14. What is the color of Donald Duck's bowtie?
                         <br>
-                        <input type="radio" name="q14" class="a">
-                        "Red"
+                        <input type="radio" name="q14" class="a"> "Red"
                         <br>
-                        <input type="radio" name="q14" class="b">
-                        "Blue"
+                        <input type="radio" name="q14" class="b"> "Blue"
                         <br>
-                        <input type="radio" name="q14" class="b">
-                        "Green"
+                        <input type="radio" name="q14" class="b"> "Green"
                         <br>
-                        <input type="radio" name="q14" class="b">
-                        "Yellow"      
+                        <input type="radio" name="q14" class="b"> "Yellow"
                 </p>
                 <br>
                 <p>15. Which of these cities is closest to London, UK?
                         <br>
-                        <input type="radio" name="q15" class="b">
-                        "Miami, FL"
+                        <input type="radio" name="q15" class="b"> "Miami, FL"
                         <br>
-                        <input type="radio" name="q15" class="a">
-                        "New York, NY"
+                        <input type="radio" name="q15" class="b"> "New York, NY"
                         <br>
-                        <input type="radio" name="q15" class="b">
-                        "Atlanta, GA"
+                        <input type="radio" name="q15" class="b"> "Atlanta, GA"
                         <br>
-                        <input type="radio" name="q15" class="b">
-                        "Boston, MA"      
+                        <input type="radio" name="q15" class="a"> "Boston, MA"
                 </p>
                 <br>
                 <p>16. Which country hosted the Summer Olympics in 2016?
                         <br>
-                        <input type="radio" name="q16" class="b">
-                        "Spain"
+                        <input type="radio" name="q16" class="b"> "Spain"
                         <br>
-                        <input type="radio" name="q16" class="b">
-                        "Brazil"
+                        <input type="radio" name="q16" class="a"> "Brazil"
                         <br>
-                        <input type="radio" name="q16" class="b">
-                        "Greece"
+                        <input type="radio" name="q16" class="b"> "Greece"
                         <br>
-                        <input type="radio" name="q16" class="a">
-                        "China"      
+                        <input type="radio" name="q16" class="b"> "China"
                 </p>
                 <br>
                 <p>17. What religion is the most practiced one in India?
                         <br>
-                        <input type="radio" name="q17" class="b">
-                        "Hinduism"
+                        <input type="radio" name="q17" class="a"> "Hinduism"
                         <br>
-                        <input type="radio" name="q17" class="b">
-                        "Sikhism"
+                        <input type="radio" name="q17" class="b"> "Sikhism"
                         <br>
-                        <input type="radio" name="q17" class="a">
-                        "Islam"
+                        <input type="radio" name="q17" class="b"> "Islam"
                         <br>
-                        <input type="radio" name="q17" class="b">
-                        "Shinto"      
+                        <input type="radio" name="q17" class="b"> "Shinto"
                 </p>
                 <br>
                 <p>18. What funk/soul band was Lionel Richie a member of?
                         <br>
-                        <input type="radio" name="q1" class="a">
-                        "Ataris"
+                        <input type="radio" name="q18" class="b"> "Ataris"
                         <br>
-                        <input type="radio" name="q1" class="b">
-                        "Amigas"
+                        <input type="radio" name="q18" class="b"> "Amigas"
                         <br>
-                        <input type="radio" name="q1" class="b">
-                        "Commodores"
+                        <input type="radio" name="q18" class="a"> "Commodores"
                         <br>
-                        <input type="radio" name="q1" class="b">
-                        "Spectrums"      
+                        <input type="radio" name="q18" class="b"> "Spectrums"
                 </p>
                 <br>
                 <p>19. What temperature is the same in Celsius and Fahrenheit?
                         <br>
-                        <input type="radio" name="q1" class="a">
-                        "+100 Degrees"
+                        <input type="radio" name="q19" class="b"> "+100 Degrees"
                         <br>
-                        <input type="radio" name="q1" class="b">
-                        "+40 Degrees"
+                        <input type="radio" name="q19" class="b"> "+40 Degrees"
                         <br>
-                        <input type="radio" name="q1" class="b">
-                        "-40 Degrees"
+                        <input type="radio" name="q19" class="a"> "-40 Degrees"
                         <br>
-                        <input type="radio" name="q1" class="b">
-                        "0 Degrees"      
+                        <input type="radio" name="q19" class="b"> "0 Degrees"
                 </p>
                 <br>
                 <p>20. Which mammal first reached Earth's orbit alive?
                         <br>
-                        <input type="radio" name="q1" class="a">
-                        "Monkey"
+                        <input type="radio" name="q20" class="b"> "Monkey"
                         <br>
-                        <input type="radio" name="q1" class="b">
-                        "Dog"
+                        <input type="radio" name="q20" class="a"> "Dog"
                         <br>
-                        <input type="radio" name="q1" class="b">
-                        "Cat"
+                        <input type="radio" name="q20" class="b"> "Cat"
                         <br>
-                        <input type="radio" name="q1" class="b">
-                        "Human"      
+                        <input type="radio" name="q20" class="b"> "Human"
                 </p>
                 <br>
                 <p>21. What is the largest country, by area, that has only one time zone?
                         <br>
-                        <input type="radio" name="q1" class="a">
-                        "Australia"
+                        <input type="radio" name="q21" class="b"> "Australia"
                         <br>
-                        <input type="radio" name="q1" class="b">
-                        "Turkey"
+                        <input type="radio" name="q21" class="b"> "Turkey"
                         <br>
-                        <input type="radio" name="q1" class="b">
-                        "China"
+                        <input type="radio" name="q21" class="a"> "China"
                         <br>
-                        <input type="radio" name="q1" class="b">
-                        "Russia"      
+                        <input type="radio" name="q21" class="b"> "Russia"
                 </p>
                 <br>
                 <p>22. How many blue stripes does the United States of America national flag have?
                         <br>
-                        <input type="radio" name="q1" class="a">
-                        "6"
+                        <input type="radio" name="q22" class="b"> "6"
                         <br>
-                        <input type="radio" name="q1" class="b">
-                        "0"
+                        <input type="radio" name="q22" class="a"> "0"
                         <br>
-                        <input type="radio" name="q1" class="b">
-                        "7"
+                        <input type="radio" name="q22" class="b"> "7"
                         <br>
-                        <input type="radio" name="q1" class="b">
-                        "13"      
+                        <input type="radio" name="q22" class="b"> "13"
                 </p>
 
-            </div>
-               
+        </div>
 
-            
-    
+
+
+
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+        //the variables
+        var correct = 0;
+        var total = 22;
+        var timer = 0;
+        var intervalID;
+        //the functions
+
+
+        function timerrun() {
+                timer = 100;
+                showhide();
+                clearInterval(intervalID);
+                intervalID = setInterval(decrement, 1000);
+                $(".a").on("click", function () {
+                        correct++;
+                })
+        };
+
+        function decrement() {
+                timer--;
+                $("#show-number").html("<h2>" + "Seconds Remaining: " + timer + "</h2>");
+                //  Once number hits zero...
+                if (timer === 0) {
+                        stop();
+                        $('#results').html("<p>" + "Correct: " + correct + "<p>");
+                        $('#results').append("<p>" + "Total: " + total + "<p>");
+                        $('button').html("Click Here for Restart");
+                        showhide();
+
+
+                }
+        };
+
+        function showhide() {
+                var x = document.getElementById("questions");
+                if (timer !== 0) {
+                        x.style.display = "block";
+                } else {
+                        x.style.display = "none";
+                }
+        }
+
+
+        //  The stop function
+        function stop() {
+
+                //  Clears our intervalId
+                //  We just pass the name of the interval
+                //  to the clearInterval function.
+                clearInterval(intervalID);
+        }
+
+function restart(){
+        $('#button').click(function() {
+        location.reload();
+});
+};
+
+        //run the functions     
+        showhide();
+        $("button").on("click", function () {
+                timerrun();
+                correct = 0;
+                total = 22;
+                restart();
+                console.log(timer);
+                console.log(correct);
+        });
+</script>
+
 </html>
